@@ -23,10 +23,14 @@ Never publish anything on any platform. Dev.to posts are created as drafts; ever
 - Hashnode API is paid (Pro) since May 2026 → Hashnode is copy-paste from the doc. Medium has no API → same.
 - Keyword backlog: `references/keywords.md` (move used ones to "Used"; when < 8 remain, research and add 10 new ones around EU / self-hosted / collaboration intent).
 
+## Tracking links and the $1 campaign
+
+Every Drumee link in a post must be the tracking link for its platform, so sign-ups can be attributed. Read `references/tracking.md` before writing: it has the exact URLs, the offer line to place just above the disclosure, and the date the campaign ends.
+
 ## Workflow
 
 1. **Pick topics** from the keyword backlog. Never repeat a topic already written (check the doc's tab names too).
-2. **Write** with subagents in parallel, one per piece, giving each the full `references/writing-brief.md` plus its topic, platform and slug. The brief carries the rules that matter most: verified facts with primary-source links, Drumee as one fair option (usually not first) with honest trade-offs, first-person + disclosure on Medium/Hashnode/Quora, neutral voice on Dev.to, UTM links, banned claims. Drumee 2.0 task views include board, list, backlog, calendar, timeline and reports, so never write that Drumee lacks Gantt/timeline/reports; say task planning is lighter than a dedicated PM tool instead.
+2. **Write** with subagents in parallel, one per piece, giving each the full `references/writing-brief.md` plus its topic, platform and slug. The brief carries the rules that matter most: verified facts with primary-source links, Drumee as one fair option (usually not first) with honest trade-offs, first-person + disclosure on Medium/Hashnode/Quora, neutral voice on Dev.to, tracking links from `references/tracking.md` (including the offer line while the campaign runs), banned claims. Drumee 2.0 task views include board, list, backlog, calendar, timeline and reports, so never write that Drumee lacks Gantt/timeline/reports; say task planning is lighter than a dedicated PM tool instead.
 3. **Add a `visuals:` block** to each article's frontmatter (format in `scripts/make_visuals.py` docstring and `references/visual-system.md`): pick the cover variant and screenshot that match the topic, write the figure from the article's own content (no new facts), and anchor the figure and product shot to exact H2 headings.
 4. **Render**: `python3 scripts/make_visuals.py article.md OUTDIR` per article. Then *look at every PNG* (Read the file). Fix anything that overlaps, truncates or looks empty before moving on: a quick look catches most problems, and a bad image costs more than the minute it takes.
 5. **Dev.to**: `python3 scripts/devto_push.py OUTDIR SLUG` → pushes images to the repo and creates the draft with cover and inline images. Record the edit URL.

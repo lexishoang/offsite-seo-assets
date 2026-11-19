@@ -28,7 +28,7 @@ You are writing articles that will be posted on third-party platforms (Dev.to, M
 
 ## Links
 - Max 2 links to Drumee properties per article:
-  1. `https://drumee.com/?utm_source=<platform>&utm_medium=offsite&utm_campaign=seo_2026`, where platform is devto, medium, hashnode or quora
+  1. The platform's tracking link from `tracking.md` (during the $1 campaign: the team-1usd link with TEAM1_BLOG), plus the offer line above the disclosure on Dev.to, Medium and Hashnode
   2. One relevant post on blog.drumee.com, from this list:
      self-hosted-slack-alternative, self-hosted-google-workspace-alternative, self-hosted-project-management, nextcloud-alternative-2026, self-hosted-collaboration-platform-open-source, what-is-tool-sprawl, drumee-gdpr-compliance, notion-vs-self-hosted, drumee-sovereign-node, what-is-data-sovereignty, self-hosted-vs-saas-startup, how-to-quit-google-workspace, gdpr-compliant-file-storage-for-teams, owncloud-alternative, secure-self-hosted-file-sharing
      (URL format: `https://blog.drumee.com/<slug>`)
